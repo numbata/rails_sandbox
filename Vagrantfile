@@ -3,7 +3,7 @@
 
 Vagrant::Config.run do |config|
   config.vm.box = "rails_sanbox"
-  config.vm.box_url = "https://dl.dropbox.com/u/1543052/Boxes/UbuntuServer12.04amd64.box"
+  config.vm.box_url = "http://files.vagrantup.com/precise64.box"
 
   #config.vm.network :hostonly, "192.168.1.15"
   config.vm.network :bridged
