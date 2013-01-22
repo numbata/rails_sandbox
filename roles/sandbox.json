@@ -1,0 +1,32 @@
+{
+  "name" : "sandbox",
+  "chef_type" : "role",
+  "json_class" : "Chef::Role",
+  "description" : "Sandbox for rails application",
+  "run_list" : [
+    "recipe[apt]",
+    "recipe[rvm::system]",
+    "recipe[rvm::vagrant]",
+    "recipe[postgresql]"
+  ],
+  "override_attributes" : {
+    "nginx" : {
+      "init_style" : "init"
+    },
+    "rvm" : {
+        "global_gems": [
+            {"name": "bundler"},
+            {"name": "rails"},
+            {"name": "rubygems-bundler", "action": "remove"}
+        ],
+        "rubies": [
+          "1.9.3-p194"
+        ]
+    },
+    "mysql" : {
+      "server_root_password" : "root",
+      "server_repl_password" : "root",
+      "server_debian_password" : "root"
+    }
+  }
+}
