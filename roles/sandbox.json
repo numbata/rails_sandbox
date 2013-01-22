@@ -10,9 +10,6 @@
     "recipe[postgresql]"
   ],
   "override_attributes" : {
-    "nginx" : {
-      "init_style" : "init"
-    },
     "rvm" : {
         "global_gems": [
             {"name": "bundler"},
@@ -22,11 +19,6 @@
         "rubies": [
           "1.9.3-p194"
         ]
-    },
-    "mysql" : {
-      "server_root_password" : "root",
-      "server_repl_password" : "root",
-      "server_debian_password" : "root"
     }
   }
 }
