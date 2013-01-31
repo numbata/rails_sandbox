@@ -16,9 +16,6 @@
             {"name": "bundler"},
             {"name": "rails"},
             {"name": "rubygems-bundler", "action": "remove"}
-        ],
-        "rubies": [
-          "1.9.3-p194"
         ]
     }
   }
