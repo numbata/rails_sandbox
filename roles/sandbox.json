@@ -7,7 +7,8 @@
     "recipe[apt]",
     "recipe[rvm::system]",
     "recipe[rvm::vagrant]",
-    "recipe[postgresql]"
+    "recipe[mysql]",
+    "recipe[nginx]"
   ],
   "override_attributes" : {
     "rvm" : {

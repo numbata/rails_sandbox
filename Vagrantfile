@@ -9,7 +9,7 @@ Vagrant::Config.run do |config|
   config.vm.network :bridged
   config.vm.customize ["modifyvm", :id, "--memory", 1536]
 
-  config.vm.forward_port 80, 8085
+  # config.vm.forward_port 80, 8085
 
   config.vm.share_folder "apps", "/apps", "/apps"
 
