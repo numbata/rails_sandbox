@@ -7,7 +7,8 @@
     "recipe[apt]",
     "recipe[rvm::system]",
     "recipe[rvm::vagrant]",
-    "recipe[mysql]",
+    "recipe[mysql::client]",
+    "recipe[mysql::server]",
     "recipe[nginx]"
   ],
   "override_attributes" : {
@@ -17,6 +18,11 @@
             {"name": "rails"},
             {"name": "rubygems-bundler", "action": "remove"}
         ]
+    },
+    "mysql" : {
+	"server_root_password": "12341234",
+        "server_repl_password": "12341234",
+        "server_debian_password": "12341234"
     }
   }
 }

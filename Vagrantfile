@@ -14,7 +14,7 @@ Vagrant::Config.run do |config|
   config.vm.share_folder "apps", "/apps", "/apps"
 
   config.vm.provision :chef_solo do |chef|
-    chef.cookbooks_path = ["cookbooks", "my-cookbooks"]
+    chef.cookbooks_path = "cookbooks"
     chef.roles_path = "roles"
     chef.add_role "sandbox"
   end
