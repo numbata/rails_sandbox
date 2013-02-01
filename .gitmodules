@@ -18,4 +18,4 @@
 	url = git://github.com/opscode-cookbooks/ohai.git
 [submodule "cookbooks/openssl"]
 	path = cookbooks/openssl
-	url = git://github.com/opscode-cookbooks/openssl.git
+	url = git@github.com:opscode-cookbooks/openssl.git

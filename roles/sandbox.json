@@ -20,9 +20,9 @@
         ]
     },
     "mysql" : {
-	"server_root_password": "12341234",
-        "server_repl_password": "12341234",
-        "server_debian_password": "12341234"
+        "server_root_password": "mysecretpassword",
+        "server_repl_password": "mysecretpassword",
+        "server_debian_password": "mysecretpassword"
     }
   }
 }
