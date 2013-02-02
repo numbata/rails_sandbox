@@ -8,8 +8,7 @@
     "recipe[rvm::system]",
     "recipe[rvm::vagrant]",
     "recipe[mysql::client]",
-    "recipe[mysql::server]",
-    "recipe[nginx]"
+    "recipe[mysql::server]"
   ],
   "override_attributes" : {
     "rvm" : {
