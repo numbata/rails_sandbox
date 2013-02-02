@@ -19,3 +19,6 @@
 [submodule "cookbooks/openssl"]
 	path = cookbooks/openssl
 	url = git@github.com:opscode-cookbooks/openssl.git
+[submodule "cookbooks/unicorn"]
+	path = cookbooks/unicorn
+	url = git@github.com:opscode-cookbooks/unicorn.git
