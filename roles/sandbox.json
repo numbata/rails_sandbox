@@ -7,6 +7,8 @@
     "recipe[apt]",
     "recipe[rvm::system]",
     "recipe[rvm::vagrant]",
+    "recipe[nginx]",
+    "recipe[openssl]",
     "recipe[mysql::client]",
     "recipe[mysql::server]"
   ],
